@@ -2,17 +2,17 @@ package edu.sdccd.cisc;
 
 //TODO: import javafx libraries
 import javafx.application.Application;
-import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.stage.Stage;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.geometry.Pos;
 import javafx.scene.text.Font;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 public class Main extends Application {
 
@@ -23,8 +23,6 @@ public class Main extends Application {
         // TODO: header
         Label header = new Label("Message Board");
         header.setFont(new Font(30));
-        header.setStyle("-fx-font-weight: bold");
-        header.setAlignment(Pos.CENTER);
 
         // TODO: status label
         Label status = new Label("Ready");
@@ -88,8 +86,8 @@ public class Main extends Application {
 
         // TODO: set scene and show stage
         Scene scene = new Scene(root, 450, 300);
-        stage.setMinWidth(400);
-        stage.setMinHeight(250);
+        stage.setMinWidth(300);
+        stage.setMinHeight(150);
         stage.setScene(scene);
         stage.show();
         stage.setTitle("Message Board");
